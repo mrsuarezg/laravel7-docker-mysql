@@ -47,6 +47,12 @@ services:
       - ./nginx/conf.d/:/etc/nginx/conf.d/
     networks:
       - app-network
+  npm:
+    image: node:14
+    working_dir: /var/www
+    entrypoint: ["npm"]
+    volumes:
+      - "./:/var/www"
 
 networks:
   app-network:

@@ -8,6 +8,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link href="{{asset('css/app.css')}}" rel="stylesheet">
 
         <!-- Styles -->
         <style>
@@ -62,6 +63,7 @@
                 margin-bottom: 30px;
             }
         </style>
+        <script src="{{ asset('js/app.js') }}" defer></script>
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -95,6 +97,9 @@
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
             </div>
+        </div>
+        <div id="app">
+            <example-component />
         </div>
     </body>
 </html>
