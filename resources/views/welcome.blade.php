@@ -4,11 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title> {{ config('app.name', 'Laravel') }}</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-        <link href="{{asset('css/app.css')}}" rel="stylesheet">
+        <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
         <!-- Styles -->
         <style>
@@ -63,7 +63,7 @@
                 margin-bottom: 30px;
             }
         </style>
-        <script src="{{ asset('js/app.js') }}" defer></script>
+        <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
     <body>
         <div class="flex-center position-ref full-height">
