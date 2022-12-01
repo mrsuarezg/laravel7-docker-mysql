@@ -19,6 +19,9 @@ import Vuetify from './plugins/vuetify'
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 // import ExampleComponent from './components/ExampleComponent.vue'
+import AuthorizedClients from './components/passport/AuthorizedClients.vue';
+import Clients from './components/passport/Clients.vue';
+import PersonalAccessTokens from './components/passport/PersonalAccessTokens.vue';
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -29,5 +32,9 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 const app = new Vue({
     el: '#app',
     vuetify: Vuetify,
-    components: {}
+    components: {
+        PassportAuthorizedClients: AuthorizedClients,
+        PassportClients: Clients,
+        PassportPersonalAccessTokens: PersonalAccessTokens,
+    }
 });
