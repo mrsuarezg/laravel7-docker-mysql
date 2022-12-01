@@ -8,9 +8,8 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-        <link href="{{ mix('css/app.css') }}" rel="stylesheet">
-
         <!-- Styles -->
+        <link href="{{ mix('css/app.css') }}" rel="stylesheet">
         <style>
             html, body {
                 background-color: #fff;

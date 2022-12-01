@@ -17,10 +17,8 @@ import Vuetify from './plugins/vuetify'
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-//Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-//Vue.component('post-component', require('./components/PostComponent.vue').default);
-import ExampleComponent from './components/ExampleComponent.vue'
-import PostComponent from './components/PostComponent.vue'
+Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+// import ExampleComponent from './components/ExampleComponent.vue'
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -31,8 +29,5 @@ import PostComponent from './components/PostComponent.vue'
 const app = new Vue({
     el: '#app',
     vuetify: Vuetify,
-    components: {
-        ExampleComponent,
-        PostComponent
-    }
+    components: {}
 });
